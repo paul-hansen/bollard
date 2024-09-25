@@ -1126,6 +1126,9 @@ where
     /// If “1”, “true”, or “True” then it will be an error if unpacking the given content would
     /// cause an existing directory to be replaced with a non-directory and vice versa.
     pub no_overwrite_dir_non_dir: T,
+    #[serde(rename = "copyUIDGID")]
+    /// If 1, true, then it will copy UID/GID maps to the dest file or dir
+    pub copy_uid_gid: T,
 }
 
 /// Parameters used in the [Download From Container
